@@ -1,31 +1,51 @@
-## Synopsis
+# Exemplos de Exercícios 03
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+<img src="https://github.com/ScenioMathias/APL-2/blob/main/ALP.png?raw=true" alt="smashupy" width="700"/>
 
-## Code Example
+## Atividades  
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+* Arquivo em Python contendo os 2 exercícios.
 
-## Motivation
+## _Exercício 1_
+_Este algoritmo irá calcular, através dos valores X e Y inserido, a distância entre dois pontos e informar se está perto ou longe._
+```shell
+import math 
+x = float(input("insira o valor de x:"))
+y = float(input("insira o valor de y:"))
+x2 = float(input("insira o valor de x2:"))
+y2 = float(input("insira o valor de y2:"))
+distância = math.sqrt((x - x2)**2 + (y - y2)**2)
+if distância >= 10:
+	print("longe")
+else: 
+        print("perto")
+```
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+## _Exercício 2_
 
-## Installation
+_Este algoritmo irá realizar o cálculo de uma equação de segundo grau através dos valores A, B e C inseridos._
 
-Provide code examples and explanations of how to get the project.
+```shell
+import math 
+a = int(input("insira o valor do Coeficiente A:"))
+b = int(input("insira o valor do Coeficiente B:"))
+c = int(input("insira o valor do Coeficiente C:"))
+if a==0:
+	print("Não é equação do 2° grau, pois, o valor de A é 0.")
+else:
+	d = (b*b)-(4*a*c)
+	if(d<0):
+		print("esta equação não possui raízes reais")
+	else:
+		if (d==0):
+			x = -b/(2*a)
+			print("a raiz desta equação é",x)
+		else:
+			x=(-b + math.sqrt(d))/(2*a)
+			x2=(-b - math.sqrt(d))/(2*a)
+			if x > x2:
+				print("as raízes da equação são", x2 ,"e", x)
+			else:
+				print("as raízes da equação são", x ,"e", x2)
 
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
+```
