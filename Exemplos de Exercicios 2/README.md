@@ -1,31 +1,70 @@
-## Synopsis
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+# Exemplos de Exercícios 02
 
-## Code Example
+<img src="https://github.com/ScenioMathias/APL-2/blob/main/ALP.png?raw=true" alt="smashupy" width="700"/>
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+## Atividades 1, 2, 3, 4 e 5 
 
-## Motivation
+* Arquivo em Python contendo os 5 exercícios.
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+## _Exercício 1_
 
-## Installation
+_Este algoritmo informará se o número inserido é par ou ímpar._ 
 
-Provide code examples and explanations of how to get the project.
-
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
+```shell
+número = int(input("Insira um número inteiro:"))
+if número % 2 == 0:
+ print("par")
+else:
+ print("ímpar")
+```
+## _Exercício 2_
+_Este algoritmo irá analisar se o número inserido é divisível por 3, caso for, será pintado na tela a palavra “Fizz”._ 
+```shell
+número = int(input("Insira um número inteiro:"))
+if número % 3 == 0:
+  print("Fizz")
+else: 
+  print(número)
+  ```
+  
+  ## _Exercício 3_
+  _Este algoritmo irá analisar se o número inserido é divisível por 5, caso for, será pintado na tela a palavra “Buzz”._ 
+  ```shell
+  número = int(input("Insira um número inteiro:"))
+if número % 5 == 0:
+  print("Buzz")
+else: 
+  print(número)
+  ```
+  
+  ## _Exercício 4_
+  _Este algoritmo irá analisar se o número inserido é divisível por 3 e por 5, caso for, será pintado na tela a palavra “FizzBuzz”_
+  ```shell
+  número = int(input("Insira um número inteiro:"))
+if número % 3 == 0 and número % 5 == 0:
+    print("FizzBuzz")
+else: 
+    print(número)
+  
+ ```
+ ## _Exercício 5_
+ _Este algoritmo irá analisar se os números inseridos estão em ordem crescente._
+ 
+ ```shell
+n1 = int(input("Insira o valor do primeiro número inteiro:"))
+n2 = int(input("Insira o valor do segundo número inteiro:"))
+n3 = int(input("Insira o valor do terceiro número inteiro:"))
+x = 1
+y = 1
+z = 1
+if n1 < n2  and  n1< n3:
+	x = n1
+	if n2 < n3:
+		y = n2
+		z = n3
+		print("crescente")
+else:
+	print("não está em ordem crescente")
+   ```
+  
