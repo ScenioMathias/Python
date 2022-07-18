@@ -33,9 +33,9 @@ else:
   ```shell
   número = int(input("Insira um número inteiro:"))
   if número % 5 == 0:
-  print("Buzz")
+    print("Buzz")
   else: 
-  print(número)
+    print(número)
   ```
   
   ## _Exercício 4_
