@@ -1,31 +1,71 @@
-## Synopsis
+# Exemplos de Exercícios 01 
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+<img src="https://github.com/ScenioMathias/APL-2/blob/main/ALP.png?raw=true" alt="smashupy" width="700"/>
 
-## Code Example
+## Atividades 1,2 e 3
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+* Arquivo em Python contendo os 3 exercícios.
 
-## Motivation
+## _Exercício 1_
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+_Este algoritmo realiza a área e perímetro de um quadrado, através das informações dos lados do quadrado._ 
 
-## Installation
+```shell
+a = input("Digite o valor correspondente ao lado de um quadrado:")
+a = float(a)
+x = a * 4
+y = a * a 
+print("perímetro:",x,"- área:",y)
+```
 
-Provide code examples and explanations of how to get the project.
-
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
+_Este algoritmo apresenta os dados de vencimento de uma fatura do cliente, após o mesmo inseri-los no computador._
+```shell
+nome = input("Digite o nome do cliente:")
+dv = input("Digite o dia de vencimento:")
+mv = input("Digite o mês de vencimento:")	
+vf= input("Digite o valor da fatura:")
+print("Olá,",nome)
+print("A sua fatura com vencimento em",dv,"de",mv,"no valor de R$",vf,"está fechada.")
+```
+## _Exercício 2_
+_Este algoritmo fará uma média aritmética das notas inseridas pelo usuário._
+```shell
+n1 = input("Digite a primeira nota:")
+n1 = float(n1)
+n2 = input("Digite a segunda nota:")
+n2 = float(n2)
+n3 = input("Digite a terceira nota:")
+n3 = float(n3)
+n4 = input("Digite a quarta nota:")
+n4 = float(n4)
+x = n1 + n2 + n3 + n4
+y = x / 4 
+print("A média aritmética é:",y)
+```
+_Este algoritmo fará uma conversão de segundos para quantidade de dias, horas, min e segundos._
+```shell
+seg = input("Por favor, entre com o número de segundos que deseja converter:")
+seg = int(seg)
+dia = 86400
+qd = seg / dia 
+qd = int(qd)
+r =  seg % dia 
+hr = 3600
+qh = r / hr 
+qh = int(qh)
+r = seg %  hr
+min = 60 
+qm = r / min 
+qm = int(qm)
+segundos = r % min 
+print(qd,"dias,",qh,"horas,",qm,"min e",segundos,"segundos.")
+```
+## _Exercício 3_
+_Este algoritmo fará contagem das dezenas que contém em um certo número inserido._
+```shell
+num = input("Digite um número inteiro:")
+num = int(num)
+divint = num // 10 
+valdez = divint % 10
+print("O dígito das dezenas é",valdez)
+```
