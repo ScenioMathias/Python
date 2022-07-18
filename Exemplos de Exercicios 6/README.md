@@ -1,31 +1,61 @@
-## Synopsis
+# Exemplos de Exercícios 06
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+<img src="https://github.com/ScenioMathias/APL-2/blob/main/ALP.png?raw=true" alt="smashupy" width="700"/>
 
-## Code Example
+## Atividades  
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+* Arquivo em Python contendo os 3 exercícios.
 
-## Motivation
+## _Exercício 1_
+_Este algoritmo irá identificar, por meio de cálculos, qual valor maior dentre os números inseridos._ 
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+```shell
 
-## Installation
+def maximo(x,y): 
+    if x > y: 
+       return(x)
+    else: 
+       return(y)
 
-Provide code examples and explanations of how to get the project.
 
-## API Reference
+x = input("Digite o valor de x:")
+y = input("Digite o valor de y:")
+print("O maior valor entre os dois inseridos é:", maximo(x,y))
+    
+```
+## _Exercício 2_
+_Este algoritmo irá identificar, por meio de cálculos, qual o maior número primo do número inserido._ 
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
 
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
+```shell
+def maior_primo(x):
+	if x == 2:
+		return(x)
+	else:
+		if x % 2 == 1:
+			return(x)
+		else:
+			primos = []
+			for k in range(x):
+				d = 0
+				for b in range(x):
+					if k%(b+1) == 0:
+						d += 1
+				if d == 2:
+					primos.append(k)
+					
+			return(max(primos))
+      
+ ```  
+ ## _Exercício 3_
+ 
+ _Este algoritmo irá identificar, por meio de cálculos, se a letra inserida é vogal ou não._ 
+ ```shell
+ 
+ def vogal(z):
+	if (z == 'a') or (z == 'e') or (z == 'i') or (z == 'o') or (z == 'u') or (z == 'A') or (z == 'E') or (z == 'I') or (z == 'O') or (z == 'U'):
+		return True
+	else:
+		return False 
+ ```   
+ 
