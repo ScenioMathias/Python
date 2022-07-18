@@ -32,9 +32,9 @@ else:
   _Este algoritmo irá analisar se o número inserido é divisível por 5, caso for, será pintado na tela a palavra “Buzz”._ 
   ```shell
   número = int(input("Insira um número inteiro:"))
-if número % 5 == 0:
+  if número % 5 == 0:
   print("Buzz")
-else: 
+  else: 
   print(número)
   ```
   
