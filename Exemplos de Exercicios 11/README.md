@@ -1,31 +1,47 @@
-## Synopsis
+# Exemplos de Exercícios 11
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+<img src="https://github.com/ScenioMathias/APL-2/blob/main/ALP.png?raw=true" alt="smashupy" width="700"/>
 
-## Code Example
+## Atividades  
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+* Arquivo em Python contendo os 2 exercícios.
 
-## Motivation
+## _Exercício 1_
+_Este algoritmo irá eliminar palavras repetidas em uma determinada lista, com base em cálculos realizados._ 
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+```shell
+d = ['Python', 'Academy', 'Academy']
+def remove_repetidos(z):
+	lista = z
+	x = 0
+	while x < len(lista):
+		y = x + 1
+		while y < len(lista):
+			if lista[y] == lista[x]:
+				del(lista[y])
+			else:
+				y = y + 1
+		x = x + 1
+	return sorted(lista)
+  
+remove_repetidos(d)
+```
 
-## Installation
+## _Exercício 2_
+_Esse algoritmo irá somar todos os valores numéricos pertencentes em uma determinada lista._
 
-Provide code examples and explanations of how to get the project.
+```shell
+d = [2,2,2]
 
-## API Reference
+def soma_elementos(z):
+    y = z
+    a = 0
+    for x in range(len(y)):
+      a += y[x]
+    return a
+ 
+soma_elementos(d)
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+print ("Resultado", soma_elementos(d))
 
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
+```
